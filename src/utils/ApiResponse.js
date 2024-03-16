@@ -7,6 +7,6 @@ class ApiResponse {
        // server status code[client error response]
        this.success = statusCode < 400
    }
-
-
 }
+
+export { ApiResponse } ;
