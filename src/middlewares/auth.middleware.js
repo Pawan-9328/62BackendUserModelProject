@@ -1,7 +1,7 @@
-import { ApiError } from "../utils/ApiError";
-import { asyncHandler } from "../utils/asyncHandler";
-import { jwt } from "jsonwebtoken";
-import { User } from "../models/user.model";
+import { ApiError } from "../utils/ApiError.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import jwt from 'jsonwebtoken';
+import { User } from "../models/user.model.js";
  
 // in prodection code case if suppose we can't used res then we fill here _ [underscore] that means response  
 export const verifyJWT = asyncHandler(async (req, _, next) => {
